@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store item</title>
+</head>
+<body>
+   
+    <div>
+        <h1>Detail Page</h1>
+        <button><a href="{% url 'update-store-item' store_item=store_item.id %}"></a>Edit</button>
+        <h3>{{store_item.id}} - product.name</h3>
+        <h3>{{store_item.description}}</h3>>
+        <h3>{{store_item.price}}KD</h3>
+        <button><a href="{% url 'delete_view' store_item=store_item.id %}"></a>Delete</button>
+
+       
+    </div>
+
+    
+</body>
+</html>
